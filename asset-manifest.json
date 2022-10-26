@@ -1,0 +1,11 @@
+{
+  "files": {
+    "main.js": "/beer-api/static/js/main.c6dbff6d.js",
+    "static/media/beer.svg": "/beer-api/static/media/beer.bfc7d35b4bcee30de537c1c244184c52.svg",
+    "index.html": "/beer-api/index.html",
+    "main.c6dbff6d.js.map": "/beer-api/static/js/main.c6dbff6d.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.c6dbff6d.js"
+  ]
+}
