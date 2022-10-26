@@ -13,7 +13,7 @@ Beer Wiki application allows you to search for information about the beers and a
 ## Main features
 
 - Searchbar allows you to search data about your favourite beer.
-- Adding beers to favourite list.
+- Adding beers to favourites list.
 
 ## Technologies
 ### React.js
