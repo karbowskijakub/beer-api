@@ -11,7 +11,6 @@ import { useEffect, useState } from 'react';
 function Root() {
   const [favourites, setFavourites] = useState([]);
   const [items, setItems] = useState([]);
-  const [isLoading, setIsLoading] = useState(true);
   const [query, setQuery] = useState('');
 
   const saveToLocalStorage = (items) => {
@@ -33,7 +32,7 @@ function Root() {
     const fetchItems = async () => {
       const result = await axios(`https://api.punkapi.com/v2/beers?beer_name=${query ? query : 'Trashy Blonde' & 'Dana -IPA is Dead'} `);
       setItems(result.data);
-      setIsLoading(false);
+ 
     };
     fetchItems();
   }, [query]);

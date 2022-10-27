@@ -3,10 +3,10 @@ import { Card, CardInner, CardFront, CardBack, TitleDiv, ImgDiv, FavButton, Styl
 import { useEffect, useState } from 'react';
 import RemoveFav from '../../atoms/RemoveFavButton/RemoveFav';
 
-const FavBeerItem = ({ items, setFavourites, saveToLocalStorage }) => {
+const FavBeerItem = ({ items,item, setFavourites, saveToLocalStorage }) => {
   return (
     <>
-      {items.map((item) => (
+      
         <CardInner key={item.id}>
           <Card>
             <CardFront>
@@ -41,7 +41,7 @@ const FavBeerItem = ({ items, setFavourites, saveToLocalStorage }) => {
             </CardBack>
           </Card>
         </CardInner>
-      ))}
+      
     </>
   );
 };

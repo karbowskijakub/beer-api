@@ -9,7 +9,9 @@ const FavBeers = ({ items, setFavourites, saveToLocalStorage }) => {
       <Background>
         <Wrapper>
           <BeersSection>
-            <FavBeerItem items={items} setFavourites={setFavourites} saveToLocalStorage={saveToLocalStorage}></FavBeerItem>
+          {items.map((item) => (
+            <FavBeerItem key={item.id}  item={item} items={items} setFavourites={setFavourites} saveToLocalStorage={saveToLocalStorage}></FavBeerItem>
+          ))}
           </BeersSection>
         </Wrapper>
       </Background>
